@@ -25,7 +25,7 @@ This repository is the **public reference** for the KCG project: token facts, of
 | Contract | [`0x1a5093B6f1ef2fc4f45Cb651cb2fb9Ce14eb79A5`](https://bscscan.com/token/0x1a5093B6f1ef2fc4f45Cb651cb2fb9Ce14eb79A5) |
 | Max supply | 500,000,000,000 KCG, fixed — no minting |
 | Standard | OpenZeppelin ERC20 + Ownable (`FixedSupplyToken.sol`) |
-| Audit | CertiK, final report 2025-12-01 — [summary](docs/audits/certik.md) |
+| Audit | CertiK, final report 2025-12-01 — [official summary](https://korea-culture-game.gitbook.io/koreaculturegame-docs/audits/certik) · [note](docs/audits/certik.md) |
 | Treasury control | Safe multisig — [details](docs/security/multisig.md) |
 
 Official addresses are listed **only** in [docs/addresses/mainnet.md](docs/addresses/mainnet.md). Any token not listed there is not KCG. See also the [SMG (TON) prototype disclosure](docs/disclosures/smg-ton.md).
@@ -37,7 +37,7 @@ Official addresses are listed **only** in [docs/addresses/mainnet.md](docs/addre
 | [`docs/tokenomics/`](docs/tokenomics/kcg-token.md) | Supply, allocation, vesting schedule, circulating-supply model |
 | [`docs/addresses/`](docs/addresses/mainnet.md) | Official contract and treasury wallet registry |
 | [`docs/security/`](docs/security/) | Privileged-role model, multisig controls |
-| [`docs/audits/`](docs/audits/certik.md) | CertiK assessment summary and deployment alignment |
+| [`docs/audits/`](docs/audits/certik.md) | Pointer to the official CertiK summary (full report available to verified parties) |
 | [`docs/product/`](docs/product/games.md) | The games, how KCG is earned and spent, screenshots |
 | [`docs/legal/`](docs/legal/) | Privacy policy, terms of service |
 | [`contracts/`](contracts/README.md) | Token contract reference (source as verified on BscScan) |
@@ -58,13 +58,14 @@ Official addresses are listed **only** in [docs/addresses/mainnet.md](docs/addre
 | Token contract | Deployed on BSC mainnet, source verified, CertiK assessed |
 | Games | Live in Telegram; Android app in Google Play internal testing |
 | In-app Cash (Google Play billing) | In development |
-| Docs | Mirrored from the GitBook; this repo is the versioned copy |
+| Docs | The [GitBook](https://korea-culture-game.gitbook.io/koreaculturegame-docs) is the primary source; this repo mirrors it with versioned history |
 
-## Contact
+## Contact & community
 
+- Official documentation: [korea-culture-game.gitbook.io/koreaculturegame-docs](https://korea-culture-game.gitbook.io/koreaculturegame-docs)
+- Channels and social media: [Docs › Channel](https://korea-culture-game.gitbook.io/koreaculturegame-docs/social-media/channel)
 - Business / listings: ceo@koreaculturegame.com
 - Security disclosures: see [SECURITY.md](SECURITY.md)
-- Community: [docs/community/channels.md](docs/community/channels.md)
 
 ## License
 

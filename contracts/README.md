@@ -10,7 +10,7 @@
 | Supply | 500,000,000,000 KCG minted once at deployment; **no mint function** |
 | Decimals | see BscScan token page |
 | Owner | Safe multisig — see [`docs/security/multisig.md`](../docs/security/multisig.md) |
-| Audit | CertiK security assessment, final 2025-12-01 — see [`docs/audits/certik.md`](../docs/audits/certik.md) |
+| Audit | CertiK security assessment, final 2025-12-01 — [official summary](https://korea-culture-game.gitbook.io/koreaculturegame-docs/audits/certik) |
 
 ## Source
 

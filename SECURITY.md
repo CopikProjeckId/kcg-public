@@ -20,7 +20,7 @@ Out of scope: denial of service, social engineering, issues in third-party servi
 
 - Fixed supply; the contract has no mint function.
 - Single privileged role (`Ownable`); the owner is a Safe multisig — see [docs/security/](docs/security/).
-- Independent assessment by CertiK (2025-12-01): no critical/major/medium/minor findings; 2 centralization and 2 informational notes, acknowledged and mitigated operationally — see [docs/audits/certik.md](docs/audits/certik.md).
+- Independent assessment by CertiK (2025-12-01): no critical/major/medium/minor findings; 2 centralization and 2 informational notes, acknowledged and mitigated operationally — see the [official CertiK summary](https://korea-culture-game.gitbook.io/koreaculturegame-docs/audits/certik).
 
 ## Game integrity
 
