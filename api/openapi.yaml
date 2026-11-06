@@ -1,0 +1,84 @@
+openapi: 3.0.3
+info:
+  title: Korea Culture Game — public endpoints
+  version: 1.0.0
+  description: >
+    Unauthenticated, read-only configuration endpoints of the KCG game servers.
+    Authenticated gameplay APIs under /v1 are not public.
+  contact:
+    email: ceo@koreaculturegame.com
+servers:
+  - url: https://koreaculturegame.com
+    description: Red Light Green Light + lobby
+  - url: https://tug.koreaculturegame.com
+  - url: https://younghee.koreaculturegame.com
+  - url: https://glass.koreaculturegame.com
+  - url: https://paengi.koreaculturegame.com
+  - url: https://dalgona.koreaculturegame.com
+paths:
+  /config:
+    get:
+      summary: Platform configuration
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  name: { type: string, example: KoreaCultureGame API }
+                  version: { type: string, example: 1.0.0 }
+                  path:
+                    type: object
+                    additionalProperties: { type: string }
+                    description: API path map (e.g. auth → /v1/auth)
+                  token_name: { type: string, example: KCG }
+                  token_change_ratio:
+                    type: object
+                    properties:
+                      point: { type: integer, example: 1000 }
+                      kcg: { type: integer, example: 1 }
+                  reward:
+                    type: object
+                    properties:
+                      referral: { type: integer }
+                      video: { type: integer }
+                  exchange_open: { type: boolean }
+  /config_to_lobby:
+    get:
+      summary: Lobby banner, game list and social links (main server only)
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  lobby_banner: { type: array, items: { type: object } }
+                  lobby_game_list:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        name: { type: string, example: Dalgona }
+                        image: { type: string, format: uri }
+                        open: { type: boolean }
+                        open_link: { type: string, example: https://t.me/korea_culture_game_bot/dalgona }
+                        game_key: { type: string, example: dalgona }
+                        app_visible: { type: boolean }
+                        modes:
+                          type: array
+                          items: { type: string, enum: [single, battle, idle, event] }
+                        orientation: { type: string, enum: [portrait, landscape] }
+                  lobby_game_social: { type: array, items: { type: object } }
+  /manifest:
+    get:
+      summary: TON Connect manifest (Telegram version; main, tug and younghee servers)
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: { type: object }

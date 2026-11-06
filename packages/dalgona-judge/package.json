@@ -1,0 +1,19 @@
+{
+  "name": "@koreaculturegame/dalgona-judge",
+  "version": "0.3.0",
+  "description": "Deterministic trace judge for the KCG Dalgona game — the same code runs in the client (feedback) and on the server (final verdict).",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "tsc -p tsconfig.json && node --test dist/judge.test.js"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.7",
+    "typescript": "^5.7.2"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/koreaculturegame/kcg-public",
+    "directory": "packages/dalgona-judge"
+  }
+}
