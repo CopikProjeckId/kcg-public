@@ -10,7 +10,7 @@ Do not open public issues for security problems, and do not test against product
 
 In scope:
 - KCG token contract `0x1a5093B6f1ef2fc4f45Cb651cb2fb9Ce14eb79A5` (BSC)
-- Game servers under `*.koreaculturegame.com`
+- Game servers and web games under `*.koreaculturegame.com` (including when opened from Telegram)
 - KCG Android app (`kcg.koreaculturegame`)
 
 Out of scope: denial of service, social engineering, issues in third-party services (Google Play, BNB Chain, exchanges).
