@@ -3,12 +3,11 @@
 <h1 align="center">Korea Culture Game (KCG)</h1>
 
 <p align="center"><b>Reviving classic games, rewarding every play.</b><br>
-Korean playground classics — Red Light Green Light, Glass Bridge, Dalgona, Tug of War and more — playable instantly on Telegram and in the KCG Android app, with a shared in-game currency (KCG) and the on-chain KCG token (BEP-20).</p>
+Korean playground classics — Red Light Green Light, Glass Bridge, Dalgona, Tug of War and more — in one Android app, with a shared in-game currency (KCG) and the on-chain KCG token (BEP-20).</p>
 
 <p align="center">
 <a href="https://korea-culture-game.gitbook.io/koreaculturegame-docs">Docs (GitBook)</a> ·
 <a href="https://koreaculturegame.com">Web</a> ·
-<a href="https://t.me/korea_culture_game_bot">Telegram bot</a> ·
 <a href="https://bscscan.com/token/0x1a5093B6f1ef2fc4f45Cb651cb2fb9Ce14eb79A5">KCG on BscScan</a>
 </p>
 
@@ -47,8 +46,8 @@ Official addresses are listed **only** in [docs/addresses/mainnet.md](docs/addre
 
 ## Products
 
-- **Telegram Mini Apps** — every game runs inside Telegram via `@korea_culture_game_bot`.
-- **KCG Android app** — one Google sign-in, all games in-app, a shared Cash wallet for cosmetics (Google Play, internal testing).
+- **KCG Android app** (`kcg.koreaculturegame`) — one Google sign-in, every game inside the app, a shared Cash wallet for cosmetics. Currently in Google Play internal testing ahead of release.
+- **Web games** — each game is served from its own `*.koreaculturegame.com` host; the app loads these.
 - **Games live today**: Red Light Green Light (single + 456-player live battle), Tug of War, Younghee, Glass Bridge (3D), Spinning Top (idle), Dalgona (3D carving, 14 stamp shapes), Rock Paper Scissors (daily event).
 
 ## Status
@@ -56,7 +55,7 @@ Official addresses are listed **only** in [docs/addresses/mainnet.md](docs/addre
 | Area | State |
 |---|---|
 | Token contract | Deployed on BSC mainnet, source verified, CertiK assessed |
-| Games | Live in Telegram; Android app in Google Play internal testing |
+| Games | Seven games live on `*.koreaculturegame.com`; Android app in Google Play internal testing |
 | In-app Cash (Google Play billing) | In development |
 | Docs | The [GitBook](https://korea-culture-game.gitbook.io/koreaculturegame-docs) is the primary source; this repo mirrors it with versioned history |
 

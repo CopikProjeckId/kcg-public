@@ -1,14 +1,14 @@
 # Terms of Service
 
-_Korea Culture Game (“KCG”, “we”) — the KCG Android app and the KCG web games. Effective date: 2026-11-01._
+_Korea Culture Game (“KCG”, “we”) — the KCG Android app and the web games it loads. Effective date: 2026-11-01._
 
 ## 1. The service
 
-KCG is a collection of casual mini games. You need a Google account (app) or a Telegram account (web games) to play. You must be at least 13 years old, or the minimum age required in your country.
+KCG is a collection of casual mini games. You need a Google account to play. You must be at least 13 years old, or the minimum age required in your country.
 
 ## 2. Your account
 
-You are responsible for activity on your account and for keeping access to your Google or Telegram account secure. One person may hold one account. We may suspend or close accounts that cheat, exploit bugs, automate play, abuse other players, or violate these terms.
+You are responsible for activity on your account and for keeping access to your Google account secure. One person may hold one account. We may suspend or close accounts that cheat, exploit bugs, automate play, abuse other players, or violate these terms.
 
 ## 3. KCG, Cash and virtual items
 

@@ -1,13 +1,12 @@
 # Privacy Policy
 
-_Korea Culture Game (“KCG”, “we”) — the KCG Android app (package `kcg.koreaculturegame`) and the KCG web games. Effective date: 2026-11-01._
+_Korea Culture Game (“KCG”, “we”) — the KCG Android app (package `kcg.koreaculturegame`) and the web games it loads. Effective date: 2026-11-01._
 
 ## 1. What we collect
 
 | Data | Why | Source |
 |---|---|---|
 | Google account identifier (subject ID), e-mail address, display name, profile picture | Creating and signing in to your KCG account in the app | Google Sign-In, with your consent |
-| Telegram user ID, username, name, profile picture, language | Signing in to the web games opened from Telegram | Telegram Mini App init data |
 | Gameplay data: scores, progress, game currency (KCG) balance, items, best times, play history | Running the games, rewards, rankings, fraud prevention | Generated while you play |
 | Purchase records (product, time, order ID) — once in-app purchases are offered | Delivering what you bought, refunds, fraud prevention | Google Play Billing |
 | Technical data: IP address, device/OS/app version, request logs | Security, debugging, abuse prevention | Automatically when the app talks to our servers |
@@ -24,7 +23,7 @@ We do not sell personal data and we do not use it for advertising profiles.
 
 ## 3. Sharing
 
-Data is processed by our own servers. We rely on these processors: Google (Sign-In, Play Billing), Telegram (Mini App sign-in for the web games), and our hosting providers. We disclose data only when required by law.
+Data is processed by our own servers. We rely on these processors: Google (Sign-In, Play Billing) and our hosting providers. We disclose data only when required by law.
 
 ## 4. Retention and deletion
 

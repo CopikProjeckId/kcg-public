@@ -1,6 +1,6 @@
 # The games
 
-All games run as Telegram Mini Apps (`@korea_culture_game_bot`) and inside the KCG Android app. Results are judged on our servers; rewards are credited only after server validation.
+All games run inside the KCG Android app (each game is a web game served from its own `*.koreaculturegame.com` host). Results are judged on our servers; rewards are credited only after server validation.
 
 | Game | Mode | How it plays | Reward |
 |---|---|---|---|

@@ -17,4 +17,4 @@ All notable public-facing changes. Dates are UTC.
 
 ## 2025 — Games
 
-- Red Light Green Light (single + 456-player live battle), Tug of War, Younghee, Glass Bridge (3D), Spinning Top (idle mining), Rock Paper Scissors event — live as Telegram Mini Apps.
+- Red Light Green Light (single + 456-player live battle), Tug of War, Younghee, Glass Bridge (3D), Spinning Top (idle mining), Rock Paper Scissors event — launched as web games on `*.koreaculturegame.com`.

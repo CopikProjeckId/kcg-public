@@ -2,7 +2,7 @@
 
 ## Reporting a vulnerability
 
-Please report security issues **privately** to **ceo@koreaculturegame.com** with the subject `SECURITY`. Include steps to reproduce, affected component (token contract, game server, Telegram mini app, Android app), and impact. We acknowledge reports within 3 business days and keep you informed until resolution.
+Please report security issues **privately** to **ceo@koreaculturegame.com** with the subject `SECURITY`. Include steps to reproduce, affected component (token contract, game server, Android app), and impact. We acknowledge reports within 3 business days and keep you informed until resolution.
 
 Do not open public issues for security problems, and do not test against production accounts other than your own.
 
@@ -11,10 +11,9 @@ Do not open public issues for security problems, and do not test against product
 In scope:
 - KCG token contract `0x1a5093B6f1ef2fc4f45Cb651cb2fb9Ce14eb79A5` (BSC)
 - Game servers under `*.koreaculturegame.com`
-- Telegram mini apps served by `@korea_culture_game_bot`
 - KCG Android app (`kcg.koreaculturegame`)
 
-Out of scope: denial of service, social engineering, issues in third-party services (Telegram, Google Play, BNB Chain, exchanges).
+Out of scope: denial of service, social engineering, issues in third-party services (Google Play, BNB Chain, exchanges).
 
 ## Token security model (summary)
 

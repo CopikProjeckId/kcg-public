@@ -65,7 +65,7 @@ paths:
                         name: { type: string, example: Dalgona }
                         image: { type: string, format: uri }
                         open: { type: boolean }
-                        open_link: { type: string, example: https://t.me/korea_culture_game_bot/dalgona }
+                        open_link: { type: string, example: https://dalgona.koreaculturegame.com }
                         game_key: { type: string, example: dalgona }
                         app_visible: { type: boolean }
                         modes:
@@ -73,12 +73,3 @@ paths:
                           items: { type: string, enum: [single, battle, idle, event] }
                         orientation: { type: string, enum: [portrait, landscape] }
                   lobby_game_social: { type: array, items: { type: object } }
-  /manifest:
-    get:
-      summary: TON Connect manifest (Telegram version; main, tug and younghee servers)
-      responses:
-        '200':
-          description: OK
-          content:
-            application/json:
-              schema: { type: object }

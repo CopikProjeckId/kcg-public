@@ -17,6 +17,11 @@
         "type": "address"
       },
       {
+        "internalType": "string",
+        "name": "_initialURI",
+        "type": "string"
+      },
+      {
         "internalType": "uint256",
         "name": "_initialSupply",
         "type": "uint256"
@@ -156,6 +161,25 @@
       }
     ],
     "name": "Approval",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "oldURI",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "newURI",
+        "type": "string"
+      }
+    ],
+    "name": "MetadataURIUpdated",
     "type": "event"
   },
   {
@@ -341,6 +365,19 @@
   },
   {
     "inputs": [],
+    "name": "metadataURI",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
     "name": "name",
     "outputs": [
       {
@@ -368,6 +405,19 @@
   {
     "inputs": [],
     "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "newURI",
+        "type": "string"
+      }
+    ],
+    "name": "setMetadataURI",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"
@@ -460,6 +510,19 @@
       }
     ],
     "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnershipAtLaunch",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"

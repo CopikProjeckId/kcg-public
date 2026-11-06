@@ -1,6 +1,6 @@
 # Public API
 
-Each game is served by its own HTTPS endpoint. The endpoints below are **public and unauthenticated**; they exist so wallets, aggregators and partners can read platform configuration. Everything else under `/v1/` requires a signed-in user (Telegram init data or a Google ID token issued to the KCG app) and is not part of the public surface.
+Each game is served by its own HTTPS endpoint. The endpoints below are **public and unauthenticated**; they exist so wallets, aggregators and partners can read platform configuration. Everything else under `/v1/` requires a signed-in app user (a Google ID token issued to the KCG app) and is not part of the public surface.
 
 | Game | Base URL |
 |---|---|
@@ -15,7 +15,6 @@ Each game is served by its own HTTPS endpoint. The endpoints below are **public 
 
 - `GET /config` — platform name/version, API path map, token name, point↔KCG ratio, referral/ad reward amounts, exchange open flag.
 - `GET /config_to_lobby` (main server only) — lobby banner, the game list (name, image, open flag, `game_key`, modes, orientation), social links.
-- `GET /manifest` (main, tug, younghee) — TON Connect manifest used by the Telegram version.
 
 Full schema: [`openapi.yaml`](openapi.yaml).
 
@@ -23,4 +22,4 @@ Full schema: [`openapi.yaml`](openapi.yaml).
 
 - JSON over HTTPS; `Cache-Control: no-cache` on HTML, immutable caching on hashed assets.
 - Unknown API paths return `404 text/plain`; the SPA fallback serves HTML only for page navigations.
-- Authenticated routes answer `401` without a valid token and `403 {"code":"APP_FEATURE_DISABLED"}` when an app (Google) account calls a Telegram-only feature.
+- Authenticated routes answer `401` without a valid token and `403 {"code":"APP_FEATURE_DISABLED"}` when an account calls a feature that is not available in the app.
